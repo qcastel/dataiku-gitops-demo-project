@@ -18,6 +18,6 @@ jobs:
         with:
           python-script: "tests.py"
           dataiku_api_token: ${{ secrets.DATAIKU_INSTANCE_DEV_CI_API_TOKEN }}
-          dataiku_instance_a_url: ${{ secrets.DATAIKU_INSTANCE_DEV_URL }}
-          dataiku_instance_b_url: ${{ secrets.DATAIKU_INSTANCE_STAGING_URL }}
-          dataiku_project_key: ${{ secrets.DATAIKU_PROJECT_KEY }}
+          dataiku_instance_a_url: ${{ vars.DATAIKU_INSTANCE_DEV_URL }}
+          dataiku_instance_b_url: ${{ vars.DATAIKU_INSTANCE_STAGING_URL }}
+          dataiku_project_key: ${{ vars.DATAIKU_PROJECT_KEY }}
