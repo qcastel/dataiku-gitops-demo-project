@@ -3,7 +3,7 @@ name: Dataiku GitOps CI
 on:
   pull_request:
     branches:
-      - main
+      - prod
 
 jobs:
   run-tests:
