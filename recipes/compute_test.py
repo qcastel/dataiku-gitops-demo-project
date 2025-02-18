@@ -16,7 +16,7 @@ test_df = fake_csv_df # For this sample code, simply copy input to output
 
 
 # Write recipe outputs
-#test = dataiku.Dataset("test")
-test = dataiku.Dataset("broken") 
+test = dataiku.Dataset("test")
+#test = dataiku.Dataset("broken") 
 
 test.write_with_schema(test_df)
