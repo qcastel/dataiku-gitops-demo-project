@@ -1,4 +1,4 @@
-name: Dataiku GitOps CI
+name: Dataiku GitOps PR
 
 on:
   pull_request:

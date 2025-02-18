@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Debugging Step
+        run: echo "Running Dataiku GitOps Release workflow"
+
       - name: Run Dataiku GitOps Action
         uses: qcastel/dataiku-gitops-github-action@master
         with:
@@ -24,3 +27,6 @@ jobs:
           dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
           dataiku_project_key: ${{ vars.DATAIKU_PROJECT_KEY }}
           run_tests_only: "false"
+
+      - name: Debugging Step
+        run: echo "Dataiku GitOps Release workflow completed"
