@@ -11,7 +11,7 @@ def run_tests(instance_url, api_key, project_key):
     # Implment the tests suits of your choice. Here for the demo, we simply run a recipe
     client = DSSClient(instance_url, api_key, no_check_certificate=True)
     project = client.get_project(project_key)
-    recipe = project.get_recipe('compute_fake_csv_copy')
+    recipe = project.get_recipe('compute_test')
     try:
         recipe.run(wait=True, no_fail=False)
         return 'SUCCESS'
