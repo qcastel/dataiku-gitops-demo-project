@@ -30,7 +30,12 @@
       "exportForNewBranch": false,
       "exportKnowledgeBanks": false,
       "exportEditableDatasets": true,
-      "includedDatasetsData": [],
+      "includedDatasetsData": [
+        {
+          "name": "fake_csv",
+          "type": "UploadedFiles"
+        }
+      ],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
