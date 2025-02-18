@@ -1,12 +1,11 @@
-name: Dataiku GitOps CI
+name: Dataiku GitOps Release
 
 on:
-  push:
-    branches:
-      - prod
+  release:
+    types: [created]
 
 jobs:
-  run-tests:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
