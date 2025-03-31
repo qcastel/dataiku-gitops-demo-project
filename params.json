@@ -25,11 +25,13 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "exportSavedModelsRequiredVersions": false,
+      "exportSavedModelsRequiredVersions": true,
       "exportNotebooksWithOutputs": true,
       "exportForNewBranch": false,
       "exportKnowledgeBanks": false,
       "exportEditableDatasets": true,
+      "exportPromptStudioHistories": false,
+      "exportNotebooks": true,
       "includedDatasetsData": [
         {
           "name": "fake_csv",
@@ -42,6 +44,7 @@
       "includedCodeStudios": [],
       "includedKnowledgeBanks": [],
       "includedLabelingTasks": [],
+      "includedPromptStudiosHistories": [],
       "shareAllInputDatasets": false,
       "exportForeignObjectsReferences": true
     }
