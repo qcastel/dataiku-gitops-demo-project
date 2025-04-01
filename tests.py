@@ -1,11 +1,16 @@
 import os
+
 import pytest
+import urllib3
 from dataikuapi import DSSClient
 
 # Environment variables
 DATAIKU_INSTANCE_URL = os.getenv('DATAIKU_INSTANCE_URL')
 DATAIKU_API_KEY = os.getenv('DATAIKU_API_KEY')
 DATAIKU_PROJECT_KEY = os.getenv('DATAIKU_PROJECT_KEY')
+
+# Disable warnings for unverified HTTPS requests
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Fixture for the Dataiku client
 @pytest.fixture
