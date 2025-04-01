@@ -25,4 +25,6 @@ jobs:
           dataiku_instance_prod_url: ${{ vars.DATAIKU_INSTANCE_PROD_URL }}
           dataiku_project_key: ${{ vars.DATAIKU_PROJECT_KEY }}
           client_certificate: ${{ secrets.CLIENT_CERTIFICATE }}
+          dataiku_infra_id_staging: ${{ vars.DATAIKU_INFRA_ID_STAGING }}
+          dataiku_infra_id_prod: ${{ vars.DATAIKU_INFRA_ID_PROD }}
           run_tests_only: "true"
